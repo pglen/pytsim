@@ -1,6 +1,7 @@
                     Installation
                     
-                    
+  This project will run everywhere PyGObject (PyGTK) runs.    
+                                    
   System requirements:
   
     o MSYS 2.x
@@ -9,10 +10,6 @@
     o PyGTK for GTK 3.0
     
   After installing and updating MSYS2, open console.
-  
-  Get the project by typing:
-  
-    git clone https://github.com/pglen/pyagvsim.git
   
   Get dependencies:
   
@@ -23,12 +20,12 @@
   
     Run './hello.py' (without the quotes) to see if your installation works.
     
-    
   For more info, see:
   
-  https://pygobject.readthedocs.io/en/latest/getting_started.html
-  https://www.msys2.org/
+    https://pygobject.readthedocs.io/en/latest/getting_started.html
+    https://www.msys2.org/
   
   
+
 
 
