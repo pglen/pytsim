@@ -16,7 +16,7 @@ from gi.repository import Pango
 gi.require_version('PangoCairo', '1.0')
 from gi.repository import PangoCairo
 
-from . import keyhand, config, ync, color, utils
+from . import keyhand, config, ync, color
 from . import qlcd
 
 # SIMULATION specific
@@ -1171,7 +1171,7 @@ class Doc(Gtk.DrawingArea, draw.Draw, logic.Logic):
         self.saveparms()
         
         # Add to accounting:
-        utils.logentry("Closed File", self.start_time, self.fname)
+        #logentry("Closed File", self.start_time, self.fname)
         
         return self.prompt_save(False)
        
@@ -1207,7 +1207,7 @@ class Doc(Gtk.DrawingArea, draw.Draw, logic.Logic):
         self.loadparms()
         
         # Add to accounting:
-        utils.logentry("Opened File", self.start_time, self.fname)
+        #logentry("Opened File", self.start_time, self.fname)
         
         # Propagate main wndow ref
         menu.mained = self.mained
@@ -1317,7 +1317,7 @@ class Doc(Gtk.DrawingArea, draw.Draw, logic.Logic):
         self.set_tablabel()                       
         
         # Add to accounting:
-        utils.logentry("Wrote File", self.start_time, self.fname)
+        #logentry("Wrote File", self.start_time, self.fname)
         
         return err
 
@@ -1649,6 +1649,8 @@ def run_async_time(win):
         pass
 
 #eof
+
+
 
 
 

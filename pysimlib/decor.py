@@ -32,7 +32,7 @@ class   Decor(object):
         #self.win2.set_position(Gtk.WIN_POS_CENTER)
         self.win2.set_events(Gdk.EventMask.ALL_EVENTS_MASK)
                 
-        self.win2.set_transient_for(self.self2.appwin.mywin)
+        #self.win2.set_transient_for(self.self2.appwin.mywin)
         
         try:
             self.win2.set_icon_from_file(get_img_path("agvsim.png"))
@@ -202,6 +202,7 @@ class   Decor(object):
         config.conf.sql.put("wsrcw_%d" % self.agv, oldww)           
         config.conf.sql.put("wsrch_%d" % self.agv, oldhh)           
     
+
 
 
 

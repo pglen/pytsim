@@ -160,12 +160,14 @@ class Draw(object):
             
             # hair cross in the middle
             gcr.set_source_rgba(0, 0, 0)
-            self.draw_line(gcr, xx, yy-4, xx, yy+4)
-            self.draw_line(gcr, xx+4, yy, xx-4, yy)     
-            self.draw_text(gcr, xx - 12, yy + 26, "%s%d" % ("V", cnt+1))
+            #self.draw_line(gcr, xx, yy-4, xx, yy+4)
+            #self.draw_line(gcr, xx+4, yy, xx-4, yy)     
+            
+            self.draw_text(gcr, xx - 44, yy + 26, "%s %d" % ("UFO", cnt+1))
             gcr.set_source_rgba(0, 1, 0)
-            self.draw_text(gcr, xx - 12, yy - 48, "%s%d" % 
-                                ("S", self.agvs[cnt]['qcan']['speed']))
+            self.draw_text(gcr, xx - 34, yy - 48, "%.2f:%.2f" % 
+                                ( self.agvs[cnt]['vector'][0], 
+                                    self.agvs[cnt]['vector'][1]))
             cnt = cnt + 1
         pass
     
@@ -528,6 +530,7 @@ class Draw(object):
             #self.decor_4.qcan_2.set_text("FOR V%d" % (aa['contesters'][0] + 1)) 
     
 # EOF
+
 
 
 

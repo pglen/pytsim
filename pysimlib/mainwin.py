@@ -13,7 +13,7 @@ from gi.repository import Gdk
 from gi.repository import GObject
 from gi.repository import GLib
 
-from . import ync, config, utils, doc, ui, menu
+from . import ync, config, doc, ui, menu
 
 # Into our name space
 from     .util import *
@@ -396,7 +396,7 @@ class  MainWindow():
         
         # Add to accounting:
         self.start_time = time.time()
-        utils.timesheet("Started pyagvsim", self.start_time, 0)
+        #timesheet("Started pyagvsim", self.start_time, 0)
 
     # --------------------------------------------------------------------
 
@@ -1275,7 +1275,7 @@ class  MainWindow():
             
         except:
             #print "Exception in timer handler", sys.exc_info()
-            print(utils.exc_str("In timer handler: "))
+            print(exc_str("In timer handler: "))
             pass
     
         try:
@@ -1369,7 +1369,7 @@ def OnExit(arg, prompt = True):
         print("Exiting")
 
     # Add to accounting:
-    utils.timesheet("Ended pyagvsim", mained.start_time, time.time())
+    #timesheet("Ended pyagvsim", mained.start_time, time.time())
 
     # Kill areas
     nn = notebook.get_n_pages(); cnt = 0
@@ -1390,6 +1390,8 @@ def OnExit(arg, prompt = True):
 
    
 # EOF
+
+
 
 
 

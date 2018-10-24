@@ -25,7 +25,8 @@ def load_agv_image(fname):
         raise
     return agvx
         
-agvimg = load_agv_image("vehicle.png")
+#agvimg = load_agv_image("vehicle.png")
+agvimg = load_agv_image("ufo.png")
 agvimg2 = load_agv_image("vehicle2.png")
 agvimg3 = load_agv_image("vehicle3.png")
 agvimg4 = load_agv_image("vehicle4.png")
@@ -113,6 +114,7 @@ targ = { 'targ' : pok,  'xxx' : 0, 'yyy': 0,'color' : 'red', 'zone': 3,
 
               
 # EOF
+
 
 
 
